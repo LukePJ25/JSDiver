@@ -1,0 +1,90 @@
+<!--
+Main Page for JSDiver
+Luke Jones
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSDiver</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/leaderboard.js"></script>
+    <script>
+        let scoreSubmitted = false;
+    </script>
+</head>
+<body>
+<img id="graphicSheet" alt="The game's sprite sheet." style="display: none;" src="assets/graphics.png">
+
+<div id="main">
+    <div id="content">
+        <h1>JSDiver</h1>
+        <canvas width="700" height="800" onClick="requestStart()" id="gamebox"></canvas>
+        <h2>Leaderboard</h2>
+        <div id="leaderEntryItems">
+            <label class="entryItem" for="scoreNameSubmit">Enter Your Name:</label>
+            <input id="scoreNameSubmit" class="entryItem" type="text" name="name">
+            <button class="entryItem" onclick="requestScoreSubmit()">Submit</button>
+            <p id="leaderSubmitOutput"></p>
+        </div>
+        <table id="leaderboards">
+            <thead>
+                <tr>
+                    <td>
+                        <em>Easy</em>
+                    </td>
+                    <td>
+                        <em>Medium</em>
+                    </td>
+                    <td>
+                        <em>Hard</em>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="smallTable">
+                    <table class="leaderboard">
+                        <thead>
+                        <tr>
+                            <th class="leader-heading">Name</th>
+                            <th class="leader-heading">Score</th>
+                        </tr>
+                        </thead>
+                        <tbody id="lb-easy"></tbody>
+                    </table>
+                </td>
+                <td class="smallTable">
+                    <table class="leaderboard">
+                        <thead>
+                        <tr>
+                            <th class="leader-heading">Name</th>
+                            <th class="leader-heading">Score</th>
+                        </tr>
+                        </thead>
+                        <tbody id="lb-medium"></tbody>
+                    </table>
+                </td>
+                <td class="smallTable">
+                    <table class="leaderboard">
+                        <thead>
+                        <tr>
+                            <th class="leader-heading">Name</th>
+                            <th class="leader-heading">Score</th>
+                        </tr>
+                        </thead>
+                        <tbody id="lb-hard"></tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/jsdiver.js"></script>
+</div>
+
+</body>
+</html>

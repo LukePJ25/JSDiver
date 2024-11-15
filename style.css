@@ -1,0 +1,138 @@
+/*
+JSDiver's main stylesheet
+Luke Jones
+*/
+
+#main {
+    border-left: 2px solid rgba(118, 157, 189, 0.84);
+    border-right: 2px solid rgba(118, 157, 189, 0.84);
+}
+
+body {
+    color: black;
+    font-family: Carlito, "Segoe UI", Arial, serif;
+    background: rgb(94,182,255);
+    background: linear-gradient(0deg, rgba(94,182,255,1) 0%, rgba(222,249,255,1) 100%);
+    margin: 0;
+}
+
+#gamebox {
+    background-color: white;
+    border: rgba(56, 77, 106, 0.84) solid 2px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#main {
+    background: linear-gradient(0deg, rgb(217, 250, 255) 0%, rgb(255, 255, 255) 100%);
+}
+
+h1 {
+    color: #190707;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.27);
+}
+
+h2 {
+    color: #190707;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.27);
+    margin-bottom: 1px;
+}
+
+#leaderEntryItems {
+    margin: 8px;
+}
+
+input, button {
+    border-width: 0;
+    padding: 4px;
+    outline: solid thin rgba(0,0,0,.2);
+}
+
+input {
+    background: linear-gradient(0deg, rgb(231, 239, 255) 0%, rgb(225, 237, 255) 49.9%, rgb(235, 244, 255) 50%, rgb(244, 244, 244) 100%);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background: linear-gradient(0deg, rgb(198, 219, 255) 0%, rgb(185, 214, 255) 49.9%, rgb(217, 233, 255) 50%, rgb(244, 244, 244) 100%);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+    background: linear-gradient(0deg, rgb(231, 239, 255) 0%, rgb(225, 237, 255) 49.9%, rgb(235, 244, 255) 50%, rgb(244, 244, 244) 100%);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#leaderSubmitOutput {
+    color: #f00;
+}
+
+#content {
+    width: 700px;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+table, td{
+    text-align: left;
+    vertical-align: top;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.smallTable {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+thead {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+thead tr {
+    background: linear-gradient(0deg, rgb(198, 219, 255) 0%, rgb(185, 214, 255) 49.9%, rgb(217, 233, 255) 50%, rgb(244, 244, 244) 100%);
+}
+tbody tr {
+    background: linear-gradient(0deg, rgb(231, 239, 255) 0%, rgb(225, 237, 255) 49.9%, rgb(235, 244, 255) 50%, rgb(244, 244, 244) 100%);
+}
+
+#leaderboards {
+    margin: auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#lb-easy, #lb-medium, #lb-hard {
+    border: 0;
+}
+
+.entryItem {
+    margin: inherit;
+}
+
+.leader-heading {
+    width: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    #main {
+        width: 100%;
+    }
+    #gamebox {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    #main {
+        width: 800px;
+        margin: auto;
+    }
+    #gamebox {
+        width: 700px;
+    }
+}
