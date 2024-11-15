@@ -2,6 +2,9 @@
 
 ---
 
+> [!NOTE]
+> This repository contains the code for a submission to the CS25320 assignment
+
 **JSDiver** is a simple HTML5 canvas game where you play as a skydiver, jumping from a plane and dodging obstacles in the sky as they appear.
 
 A demonstration of JSDiver can be played [here](https://users.aber.ac.uk/luj36/CS25320/jsdiver/).
